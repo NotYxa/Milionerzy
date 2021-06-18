@@ -1,0 +1,27 @@
+import random
+
+print("""
+---------------------------------------------------------------------------
+███╗░░░███╗██╗██╗░░░░░██╗░█████╗░███╗░░██╗███████╗██████╗░███████╗██╗░░░██╗
+████╗░████║██║██║░░░░░██║██╔══██╗████╗░██║██╔════╝██╔══██╗╚════██║╚██╗░██╔╝
+██╔████╔██║██║██║░░░░░██║██║░░██║██╔██╗██║█████╗░░██████╔╝░░███╔═╝░╚████╔╝░
+██║╚██╔╝██║██║██║░░░░░██║██║░░██║██║╚████║██╔══╝░░██╔══██╗██╔══╝░░░░╚██╔╝░░
+██║░╚═╝░██║██║███████╗██║╚█████╔╝██║░╚███║███████╗██║░░██║███████╗░░░██║░░░
+╚═╝░░░░░╚═╝╚═╝╚══════╝╚═╝░╚════╝░╚═╝░░╚══╝╚══════╝╚═╝░░╚═╝╚══════╝░░░╚═╝░░░
+---------------------------------------------------------------------------
+""")
+imie = input("Witaj w Milionerach, wpisz swoję imie aby kontynuować: ")
+pytania = {
+    "Kostka rubika jest z: ": ["Polski", "Węgier", "RPA", "Nie wiadomo została stworzona wiele wieków temu"],
+    "Twórcą tego kodu jest: ": ["Święty Walenty", "Zenon Nakamura", "Jan III Sobieski", "Sir Carter"],
+    "Ulubione anime Zenona to: ": ["JoJo", "One Piece", "Naruto", "Tokyo Revengers"],
+    "Język użyty do napisania tego programu to: ": ["Java", "Python", "C#", "C++"],
+    "Dumplings to angielsku to: ": ["Kawa", "Pierogi", "Kanapki", "Łysa głowa"],
+    "Zenon ma urodziny: ": ["13 lipca", "25 września", "18 września", "18 lipca"],
+    "Twoje imię to: ": ["Jan", imie, "Grzegorz", "Orzeł"],  
+    "Rok rozpoczęcia IIWW to: ": ["1940", "1939", "1941", "1954"],
+    "Karol Friz Wiśniewski to: ": ["Twój Stary", "Jupiter", "Agresor", "Anty Polak"],
+    "Lewica jest: ": ["Mądra", "Głupia", "Cudowna", "Fajna"],
+    "Kiedy odbył się D-day: ": ["1943", "1944", "1945", "1965"],
+    "Warszawa to stolica: ": ["Francji", "Polski", "Rosji", "Kanady"]
+    }
