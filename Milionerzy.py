@@ -31,7 +31,7 @@ lista_nagrod = [0, 100, 250, 500, 1000, 2500, 5000, 10000, 50000, 100000, 250000
 licznik_nagrody = 0
 licznik_pytan = 0
 losowe_pytania = {}
-
+print()
 granie = input("Będziemy teraz zadawać pytania, czy jesteś gotowy? (tak = 1/nie = 0)")
 
 while licznik_nagrody < 13 or granie:
@@ -43,7 +43,8 @@ while licznik_nagrody < 13 or granie:
             
         for pytanie, odpowiedzi in losowe_pytania.items():
             odp = 0
-            odp_litera = input(pytanie + "A. " + odpowiedzi[0] + " B. " + odpowiedzi[1] + " C. " + odpowiedzi[2] + " D. " + odpowiedzi[3] + " (Napisz A/B/C/D)")
+            print()
+            odp_litera = input(pytanie + "\nA. " + odpowiedzi[0] + " \nB. " + odpowiedzi[1] + " \nC. " + odpowiedzi[2] + " \nD. " + odpowiedzi[3] + " \n(Napisz A/B/C/D)")
 
             while odp == 0:
                 if odp_litera == "A":
@@ -55,6 +56,7 @@ while licznik_nagrody < 13 or granie:
                 elif odp_litera == "D":
                     odp = odpowiedzi[3]
                 else:
+                   print()
                    odp_litera = input("Napisz ponownie znak. (A/B/C/D)")
                    
             if odp == poprawne_odp[licznik_pytan]:
@@ -68,11 +70,14 @@ while licznik_nagrody < 13 or granie:
                 break
             
     if licznik_nagrody >= 12:
+        print()
         print("Wygrałeś stałeś się milionerem!")
     if granie == 2.115:
+        print()
         print("Następnym razem się uda :(")
         break
     else:
+        print()
         granie = input("Gdy będziesz gotowy na grę napisz \"1\".")
     
 
